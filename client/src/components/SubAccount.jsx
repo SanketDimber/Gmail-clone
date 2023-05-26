@@ -10,15 +10,18 @@ import {
 import { useState } from "react";
 import { AccountCircleOutlined } from "@mui/icons-material";
 import { accountIcon } from "../constants/Constants";
+import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
+import PersonAddAlt1OutlinedIcon from '@mui/icons-material/PersonAddAlt1Outlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
 const Element = styled(Box)({
     display: "flex",
-    flexDirection: "column",
     alignItems: "center",
     cursor: "pointer",
     // paddingTop:30,
     // paddingLeft:10,
     padding: 10,
+    // height:10
 });
 const SubAccount = () => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -123,7 +126,7 @@ const SubAccount = () => {
                             fontWeight: 520,
                         }}
                     >
-                        Manage your Google Account
+                       Manage your Google Account
                     </Button>
                     <Box style={{ paddingTop: 7 }}>
                         <Element
@@ -133,8 +136,11 @@ const SubAccount = () => {
                                     boxShadow: "none",
                                 }, height:25
                             }}
-                        >
-                            Recommended Actions
+                        >   
+                        <Box style={{marginLeft:23}}>
+                            <SecurityOutlinedIcon fontSize="small"/> 
+                            </Box>
+                            <Box style={{marginLeft:30}}><Typography >Recommended Actions</Typography></Box>
                         </Element>
                     </Box>
                 </Box>
@@ -158,23 +164,34 @@ const SubAccount = () => {
                             height:25
                         }}
                     >
+                        <Box style={{marginLeft:23}}>
+                        <PersonAddAlt1OutlinedIcon fontSize="small"/>
+                        </Box>
+                        <Box style={{marginLeft:30}}>
                         Add Another Account
+                        </Box>
                     </Element>
                 </Box>
-                <Box style={{ paddingTop: 4 }}>
+                <Box style={{ paddingTop: 4,height:25 ,paddingBottom:20}}>
                         <Element
                             sx={{
                                 "&:hover": {
                                     backgroundColor: "#c8ddfa",
                                     boxShadow: "none",
-                                }, height:25
+                                }, 
                             }}
                         >
-                            Sign Out
+                          <Box style={{marginLeft:23}}>
+                          <LogoutOutlinedIcon fontSize="small"/>
+                          </Box>
+                          <Box style={{marginLeft:30}}>  Sign Out
+                          </Box>
                         </Element>
                     </Box>
-                    <Divider light /> 
-                    <Box style={{marginLeft: 100, paddingTop: 30,display:'flex',alignItems:'center' }}>
+                    
+                    <Divider />
+
+                    <Box style={{marginLeft: 85, paddingTop: 30,display:'flex',alignItems:'center' }}>
                 
                     <Button
                          variant="text"
