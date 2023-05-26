@@ -134,7 +134,7 @@ const SubAccount = () => {
                                 }, height:25
                             }}
                         >
-                            HELLO
+                            Recommended Actions
                         </Element>
                     </Box>
                 </Box>
@@ -158,7 +158,7 @@ const SubAccount = () => {
                             height:25
                         }}
                     >
-                        HELLO
+                        Add Another Account
                     </Element>
                 </Box>
                 <Box style={{ paddingTop: 4 }}>
