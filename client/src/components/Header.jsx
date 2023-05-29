@@ -4,7 +4,7 @@ import {
     Search as SearchIcon,
     Tune,
     SettingsOutlined,
-    AccountCircleOutlined,
+  
 } from "@mui/icons-material";
 import { gmailLogo } from "../constants/Constants";
 import SubAppDrawer from "./SubAppDrawer";
@@ -92,3 +92,4 @@ const Header = ({ toggleDrawer,searchData}) => {
 };
 
 export default Header;
+
